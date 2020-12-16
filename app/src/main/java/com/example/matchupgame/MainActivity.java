@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btn_refresh = findViewById(R.id.btn_refresh);
+     
 
         final ImageAdapter imageAdapter = new ImageAdapter(this);
         final GridView gridView = findViewById(R.id.gridView);
@@ -64,12 +64,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btn_refresh.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                imageAdapter.notifyDataSetChanged();
-                gridView.setAdapter(imageAdapter);
-            }
-        });
+       
     }
 }
